@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+:root {
+    --a: #7085B6;
+    --b: #87A7D9;
+    --c: #DEF3F8;
+    --d: #4facfe;
+    --e: #00f2fe
+}
+::-webkit-scrollbar {
+    display: none
+}
+body {
+    height: auto;
+    background: linear-gradient(to left, var(--d), var(--e));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif
+}
+
+img {
+    margin: 20px 0px;
+    width: 300px;
+    border-radius: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    height: 80%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    padding: 20px;
+    gap: 6px
+}
+.celda1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 20px
+}
+.celda1 h1 {
+    font-size: 50px;
+    margin-left: -7px;
+    font-weight: bold;
+    letter-spacing: 8px
+}
+.celda1 h2 {
+    font-size: 28px;
+    font-weight: normal
+}
+.celda1 h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px 0px
+}
+.celda1 h4 {
+    font-size: 28px;
+    font-weight: bold
+}
+.celda1 p {
+    font-size: 18px;
+    margin: 40px 0px 0px 0px
+}
+.celda2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%
+}
+.tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 14px;
+    border-radius: 32px
+}
+.fila {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 4px
+}
+.fila h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    height: 60px;
+    width: 60px;
+    color: white;
+    border: 5px solid;
+    border-color: var(--c);
+    border-radius: 20px
+}
+.fila h1:hover {
+    transform: scale(0.9)
+}
+.w {
+    background-color: rgb(30, 158, 30);
+}
+.f {
+    background-color: var(--d);
+}
+.buy {
+    margin: 30px auto 30px auto;
+    width: 60%;
+    height: 50px;
+    background-color: var(--d);
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: white;
+    border: 5px solid;
+    border-color: var(--c)
+}
+.buy:hover {
+    transform: scale(1.1);
+    background-color: var(--d);
+    opacity: 80%
+}
+@media only screen and (min-device-width: 800px) and (max-width: 1250px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 30px;
+        padding: 20px;
+        gap: 6px
+    }
+    .celda1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px
+    }
+    .fila {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        padding: 4px
+    }
+    .fila h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 19px;
+        height: 55px;
+        width: 55px;
+        color: white;
+        border: 5px solid;
+        border-color: var(--c);
+        border-radius: 14px
+    }
+    .buy {
+        margin: 30px auto 30px auto;
+        width: 30%;
+        height: 50px;
+        background-color: var(--d);
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        font-size: 20px;
+        font-weight: normal;
+        letter-spacing: 5px;
+        color: white;
+        border: 5px solid;
+        border-color: var(--c)
+    }
+}
+@media only screen and (min-device-width: 400px) and (max-width: 799px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 90%;
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 30px;
+        padding: 20px;
+        gap: 6px
+    }
+    .celda1 {
+        display: flex;
+        flex-direction: column;
+        width: 103%;
+        padding: 20px
+    }
+    .fila {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        padding: 4px
+    }
+    .fila h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        height: 30px;
+        width: 30px;
+        color: white;
+        border: 3px solid;
+        border-color: var(--c);
+        border-radius: 10px
+    }
+    .buy {
+        margin: 30px auto 30px auto;
+        width: 50%;
+        height: 50px;
+        background-color: var(--d);
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        font-size: 20px;
+        font-weight: normal;
+        letter-spacing: 5px;
+        color: white;
+        border: 5px solid;
+        border-color: var(--c)
+    }
+}
+@media only screen and (min-device-width: 80px) and (max-width: 399px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 90%;
+        width: 94%;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 30px;
+        padding: 20px;
+        gap: 6px
+    }
+    .celda1 {
+        display: flex;
+        flex-direction: column;
+        width: 103%;
+        padding: 20px
+    }
+    .fila {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        padding: 4px
+    }
+    .fila h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        height: 22px;
+        width: 22px;
+        color: white;
+        border: 2px solid;
+        border-color: var(--c);
+        border-radius: 3px
+    }
+    .buy {
+        margin: 30px auto 30px auto;
+        width: 70%;
+        height: 50px;
+        background-color: var(--d);
+        border: none;
+        cursor: pointer;
+        border-radius: 30px;
+        font-size: 15px;
+        font-weight: normal;
+        letter-spacing: 5px;
+        color: white;
+        border: 5px solid;
+        border-color: var(--c)
+    }
+}
